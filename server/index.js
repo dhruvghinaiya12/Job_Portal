@@ -11,7 +11,7 @@ const app=express()
 app.use(cors());
 app.use(express.json())
 
-app.use("/api/v1",Token,AppRoutes)
+app.use("/",Token,AppRoutes)
 
 app.listen(port,()=>{
     console.log(`Server is running on port ${port}`)
